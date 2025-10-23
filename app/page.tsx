@@ -570,11 +570,9 @@ export default function JayPortfolioCosmic() {
 >
   Explore Work
 </button>
+</motion.div>
 
-    </motion.div>
-    
-  </div>
-  {/* 👆 Swipe Hint for Mobile */}
+{/* 👆 Swipe Hint for Mobile */}
 <motion.div
   initial={{ opacity: 0, y: 10 }}
   animate={{ opacity: 1, y: 0 }}
@@ -584,8 +582,9 @@ export default function JayPortfolioCosmic() {
   <ChevronRight className="h-6 w-6 text-white/70 animate-bounce-x" />
   <span className="text-xs text-white/70 mt-1">Swipe</span>
 </motion.div>
-
+</div>
 )}
+
 
 
            {/* ABOUT */}

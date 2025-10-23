@@ -718,38 +718,41 @@ export default function JayPortfolioCosmic() {
               <div className="max-w-xl w-full px-6 text-center">
                 <h2 className="text-3xl font-semibold mb-4">Let’s build something beautiful.</h2>
                 <form
-                  action="https://formspree.io/f/mzzzkayp"
-                  method="POST"
-                  className="w-full flex flex-col gap-3"
-                >
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name"
-                    required
-                    className="p-3 rounded bg-white/10 text-white placeholder-white/70 focus:bg-white/20 outline-none"
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    value=""
-                    readOnly
-                    className="p-3 rounded bg-white/10 text-white/80 outline-none"
-                  />
-                  <textarea
-                    name="message"
-                    placeholder="Your Message"
-                    rows={4}
-                    required
-                    className="p-3 rounded bg-white/10 text-white placeholder-white/70 focus:bg-white/20 outline-none"
-                  />
-                  <button
-                    type="submit"
-                    className="mt-2 py-2 rounded-xl font-medium bg-sky-500/90 hover:bg-sky-400 text-white"
-                  >
-                    Send
-                  </button>
-                </form>
+  action="https://formspree.io/f/mzzzkayp"
+  method="POST"
+  className="w-full flex flex-col gap-3"
+>
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+    className="p-3 rounded bg-white/10 text-white placeholder-white/70 focus:bg-white/20 outline-none"
+  />
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+    className="p-3 rounded bg-white/10 text-white placeholder-white/70 focus:bg-white/20 outline-none"
+  />
+  <textarea
+    name="message"
+    placeholder="Your Message"
+    rows={4}
+    required
+    className="p-3 rounded bg-white/10 text-white placeholder-white/70 focus:bg-white/20 outline-none"
+  />
+  <input type="hidden" name="_redirect" value="https://jn-portfolio.vercel.app/#contact" />
+  <input type="text" name="_gotcha" style={{ display: "none" }} />
+  <button
+    type="submit"
+    className="mt-2 py-2 rounded-xl font-medium bg-sky-500/90 hover:bg-sky-400 text-white"
+  >
+    Send
+  </button>
+</form>
+
 
                 <div className="mt-6 flex gap-4 justify-center">
                   <a href="mailto:josie@duck.com" className="hover:text-sky-300">

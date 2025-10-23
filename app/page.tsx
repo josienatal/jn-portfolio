@@ -732,7 +732,7 @@ export default function JayPortfolioCosmic() {
                   <input
                     type="email"
                     name="email"
-                    value="email@gmail.com"
+                    value=""
                     readOnly
                     className="p-3 rounded bg-white/10 text-white/80 outline-none"
                   />

@@ -32,7 +32,7 @@ type Hub = {
 };
 
 // ───────────────────────────────────────────────────────────────────────────────
-// JAY NATAL — Reality ✦ Dream (Cosmic Multi-Hub Portfolio) 
+// JAY NATAL — Reality ✦ Dream (Cosmic Multi-Hub Portfolio)
 // ───────────────────────────────────────────────────────────────────────────────
 
 const ALL_PROJECTS: Project[] = [
@@ -483,9 +483,10 @@ export default function JayPortfolioCosmic() {
 
       {/* HORIZONTAL SLIDES */}
       <main
-        ref={containerRef}
-        className="snap-x snap-mandatory overflow-x-auto overflow-y-hidden h-screen flex flex-nowrap touch-pan-x scroll-smooth"
-      >
+  ref={containerRef}
+  className="snap-x md:snap-mandatory overflow-x-auto md:overflow-y-hidden h-screen flex md:flex-nowrap flex-col md:flex-row touch-pan-x md:touch-pan-y scroll-smooth"
+>
+
         {hubs.map((hub, i) => (
           <section
             key={hub.id}
@@ -555,15 +556,35 @@ export default function JayPortfolioCosmic() {
       className="flex justify-center pt-2"
     >
       <button
-        onClick={() =>
-          scrollToIndex(hubs.findIndex((h) => h.id === "utilities"))
-        }
-        className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium transition"
-      >
-        Explore Work
-      </button>
+  onClick={() => {
+    const idx = hubs.findIndex((h) => h.id === "utilities");
+    if (window.innerWidth < 768) {
+      document.querySelectorAll("section")[idx]?.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else {
+      scrollToIndex(idx);
+    }
+  }}
+  className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium transition"
+>
+  Explore Work
+</button>
+
     </motion.div>
+    
   </div>
+  {/* 👆 Swipe Hint for Mobile */}
+<motion.div
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 2 }}
+  className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center md:hidden"
+>
+  <ChevronRight className="h-6 w-6 text-white/70 animate-bounce-x" />
+  <span className="text-xs text-white/70 mt-1">Swipe</span>
+</motion.div>
+
 )}
 
 
@@ -779,25 +800,58 @@ export default function JayPortfolioCosmic() {
       {/* MODAL */}
       <ProjectModal open={!!modal} onClose={() => setModal(null)} project={modal} theme={theme} />
 
-      {/* STYLES */} 
+      {/* STYLES */}
       <style>{`
-        main { scroll-padding-top: 6rem; }
-        section { padding-top: 6rem; }
-        html { scroll-behavior: smooth; }
-        .snap-x { scroll-snap-type: x mandatory; }
-        section { scroll-snap-align: center; }
-        main::-webkit-scrollbar { display: none; }
-        main { -ms-overflow-style: none; scrollbar-width: none; }
-        @media (max-width: 768px) {
-          .nav-orbs { display: none; }
-          main {
-            scroll-snap-type: y mandatory;
-            overflow-x: hidden;
-            overflow-y: auto;
-            flex-direction: column;
-          }
-          section { min-height: 100vh; width: 100%; }
-        }
+      main {
+  scroll-padding-top: 6rem;
+}
+section {
+  padding-top: 6rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+.snap-x {
+  scroll-snap-type: x mandatory;
+}
+section {
+  scroll-snap-align: center;
+}
+main::-webkit-scrollbar {
+  display: none;
+}
+main {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ✅ Mobile: vertical layout instead of horizontal lock */
+@media (max-width: 768px) {
+  .nav-orbs {
+    display: none;
+  }
+  main {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    height: auto;
+    min-height: 100vh;
+  }
+  section {
+    min-height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+  }
+}
+@keyframes bounce-x {
+  0%, 100% { transform: translateX(0); opacity: 0.8; }
+  50% { transform: translateX(6px); opacity: 1; }
+}
+.animate-bounce-x {
+  animation: bounce-x 1.5s infinite;
+}
+
       `}</style>
     </div>
   );

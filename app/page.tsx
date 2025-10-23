@@ -779,7 +779,7 @@ export default function JayPortfolioCosmic() {
       {/* MODAL */}
       <ProjectModal open={!!modal} onClose={() => setModal(null)} project={modal} theme={theme} />
 
-      {/* STYLES */}
+      {/* STYLES */} 
       <style>{`
         main { scroll-padding-top: 6rem; }
         section { padding-top: 6rem; }

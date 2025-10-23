@@ -32,7 +32,7 @@ type Hub = {
 };
 
 // ───────────────────────────────────────────────────────────────────────────────
-// JAY NATAL — Reality ✦ Dream (Cosmic Multi-Hub Portfolio)
+// JAY NATAL — Reality ✦ Dream (Cosmic Multi-Hub Portfolio) 
 // ───────────────────────────────────────────────────────────────────────────────
 
 const ALL_PROJECTS: Project[] = [

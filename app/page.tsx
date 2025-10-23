@@ -435,10 +435,19 @@ export default function JayPortfolioCosmic() {
   }, [hubs.length]);
 
   const scrollToIndex = (i: number) => {
-    const el = containerRef.current;
-    if (!el) return;
+  const el = containerRef.current;
+  if (!el) return;
+
+  if (window.innerWidth < 768) {
+    // Mobile: vertical scroll
+    const sections = el.querySelectorAll("section");
+    sections[i]?.scrollIntoView({ behavior: "smooth" });
+  } else {
+    // Desktop: horizontal scroll
     el.scrollTo({ left: i * window.innerWidth, behavior: "smooth" });
-  };
+  }
+};
+
 
   const next = () => scrollToIndex(Math.min(activeIndex + 1, hubs.length - 1));
   const prev = () => scrollToIndex(Math.max(activeIndex - 1, 0));
@@ -482,9 +491,9 @@ export default function JayPortfolioCosmic() {
       </header>
 
       {/* HORIZONTAL SLIDES */}
-      <main
+     <main
   ref={containerRef}
-  className="snap-x md:snap-mandatory overflow-x-auto md:overflow-y-hidden h-screen flex md:flex-nowrap flex-col md:flex-row touch-pan-x md:touch-pan-y scroll-smooth"
+  className="h-screen flex flex-col md:flex-row snap-y md:snap-x md:snap-mandatory overflow-y-auto md:overflow-x-auto overflow-x-hidden scroll-smooth"
 >
 
         {hubs.map((hub, i) => (
@@ -830,19 +839,20 @@ main {
     display: none;
   }
   main {
-    flex-direction: column;
-    overflow-x: hidden;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
+    flex-direction: column !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    scroll-snap-type: y mandatory !important;
     height: auto;
     min-height: 100vh;
   }
   section {
+    width: 100% !important;
     min-height: 100vh;
-    width: 100%;
     scroll-snap-align: start;
   }
 }
+
 @keyframes bounce-x {
   0%, 100% { transform: translateX(0); opacity: 0.8; }
   50% { transform: translateX(6px); opacity: 1; }

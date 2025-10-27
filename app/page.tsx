@@ -718,7 +718,7 @@ export default function JayPortfolioCosmic() {
               <div className="max-w-xl w-full px-6 text-center">
                 <h2 className="text-3xl font-semibold mb-4">Let’s build something beautiful.</h2>
                 <form
-  action="https://formspree.io/f/mzzzkayp"
+  action="https://formspree.io/f/mblpddqd"
   method="POST"
   className="w-full flex flex-col gap-3"
 >

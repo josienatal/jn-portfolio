@@ -76,7 +76,7 @@ const ALL_PROJECTS: Project[] = [
   // WEBSITES / BRANDS
   {
     id: "medium-colin",
-    title: "MediumColinBates.com",
+    title: "Medium Colin Bates",
     tag: "Portfolio",
     blurb: "Minimal writer’s site with long-form readability and dark mode.",
     tech: ["SEO", "Design", "CMS"],
@@ -94,7 +94,7 @@ const ALL_PROJECTS: Project[] = [
   },
   {
     id: "kari-denton",
-    title: "KariDenton.com",
+    title: "Kari Denton",
     tag: "Portfolio",
     blurb: "Artist/creative portfolio with crisp imagery and simple hierarchy.",
     tech: ["WordPress", "UX", "Performance"],

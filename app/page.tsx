@@ -46,6 +46,15 @@ const ALL_PROJECTS: Project[] = [
     heroImage: "/projects/prompt-splitter.gif",
     links: [{ label: "Live", href: "https://josienatal.com/prompt-splitter.html" }],
   },
+    {
+    id: "cosmic-guides",
+    title: "Cosmic Guides Chatbot(s)",
+    tag: "Utility",
+    blurb: "Voice-enabled AI companions powered by OpenAI + Amazon Polly. Each guide embodies a distinct personality, tone, and purpose — from mystic to mentor.",
+    tech: ["OpenAI", "Amazon Polly", "React","Netlify"],
+    heroImage: "/projects/cosmic-guides.gif",
+    links: [{ label: "Live Demo", href: "https://tranquil-brigadeiros-bd384d.netlify.app/" }],
+  },
   {
     id: "seacoast-calculators",
     title: "Seacoast Bank – Calculator Suite",

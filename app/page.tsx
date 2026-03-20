@@ -80,7 +80,7 @@ const ALL_PROJECTS: Project[] = [
     tag: "Anime",
     blurb: "Anime-inspired music and atmosphere experience with a cozy, immersive visual style.",
     tech: ["React", "Netlify", "UI"],
-    heroImage: "/projects/anivibes.gif",
+    heroImage: "https://josienatal.com/images//anivibes.gif",
     links: [{ label: "Live", href: "https://cozy-druid-4ba617.netlify.app/" }],
   },
   {
@@ -89,7 +89,7 @@ const ALL_PROJECTS: Project[] = [
     tag: "Anime",
     blurb: "Anime discovery and interaction concept built as a sleek, stylized web experience.",
     tech: ["React", "Netlify", "Design"],
-    heroImage: "/projects/aniengine.gif",
+    heroImage: "https://josienatal.com/images/aniengine.gif",
     links: [{ label: "Live", href: "https://animengine.netlify.app/" }],
   },
   {
@@ -98,7 +98,7 @@ const ALL_PROJECTS: Project[] = [
     tag: "Anime",
     blurb: "Anime-themed AI-inspired interface designed for recommendations, exploration, and mood-based discovery.",
     tech: ["React", "AI UX", "Netlify"],
-    heroImage: "/projects/anisage.gif",
+    heroImage: "https://josienatal.com/images/anisage.gif",
     links: [{ label: "Live", href: "https://animesage.netlify.app/" }],
   },
   {
@@ -107,7 +107,7 @@ const ALL_PROJECTS: Project[] = [
     tag: "Anime",
     blurb: "Mystical anime-inspired experience blending character energy, aesthetic design, and interactive exploration.",
     tech: ["React", "Netlify", "Creative UI"],
-    heroImage: "/projects/anioracle.gif",
+    heroImage: "https://josienatal.com/images/anioracle.gif",
     links: [{ label: "Live", href: "https://anioracle.netlify.app/" }],
   },
   {
@@ -116,7 +116,7 @@ const ALL_PROJECTS: Project[] = [
     tag: "Anime",
     blurb: "Anime quiz-style experience with a playful isekai concept and strong visual identity.",
     tech: ["React", "Netlify", "Interactive"],
-    heroImage: "/projects/isekaiq.gif",
+    heroImage: "https://josienatal.com/images/isekaiq.gif",
     links: [{ label: "Live", href: "https://isekaiiq.netlify.app/" }],
   },
 
@@ -181,7 +181,7 @@ const ALL_PROJECTS: Project[] = [
     tag: "Brand Site",
     blurb: "Streaming-focused music brand experience built around global rhythms and immersive listening.",
     tech: ["Branding", "Music", "Web"],
-    heroImage: "/projects/worldbeats.gif",
+    heroImage: "https://josienatal.com/images/worldbeats.gif",
     links: [{ label: "Live", href: "https://worldbeats.live/" }],
   },
 
@@ -239,7 +239,7 @@ const ALL_PROJECTS: Project[] = [
     tag: "Functional Tool",
     blurb: "Practical accessibility checklist for reviewing ADA and WCAG compliance across websites.",
     tech: ["Accessibility", "HTML", "Audit"],
-    heroImage: "/projects/wcag-ada.gif",
+    heroImage: "https://josienatal.com/images/wcag-ada.gif",
     links: [{ label: "Live", href: "https://josienatal.com/wcag-ada-checklist.html" }],
   },
   {
@@ -248,9 +248,27 @@ const ALL_PROJECTS: Project[] = [
     tag: "Functional Tool",
     blurb: "Structured audit tracker for organizing website issues, fixes, priorities, and review workflows.",
     tech: ["Audit", "UX", "Workflow"],
-    heroImage: "/projects/audit-tracker.gif",
+    heroImage: "https://josienatal.com/images/audit-tracker.gif",
     links: [{ label: "Live", href: "https://josienatal.com/website-audit-tracker.html" }],
   },
+  {
+  id: "ai-career-guide",
+  title: "AI Career Guide",
+  tag: "Functional Tool",
+  blurb: "Interactive AI career exploration tool that helps users identify roles, skills, and pathways into artificial intelligence fields.",
+  tech: ["AI", "Career Tool", "Interactive"],
+  heroImage: "https://josienatal.com/images/ai-career.gif",
+  links: [{ label: "Live", href: "https://josienatal.com/ai-career.html" }],
+},
+{
+  id: "it-career-quiz",
+  title: "IT Career Quiz",
+  tag: "Functional Tool",
+  blurb: "Guided quiz that recommends IT career paths based on interests, strengths, and technical preferences.",
+  tech: ["Quiz", "Career Tool", "UX"],
+  heroImage: "https://josienatal.com/images/itquiz.gif",
+  links: [{ label: "Live", href: "https://josienatal.com/itquiz-nl.html" }],
+},
 ];
 
 const HUBS: Hub[] = [

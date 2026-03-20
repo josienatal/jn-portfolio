@@ -89,7 +89,7 @@ const ALL_PROJECTS: Project[] = [
     tag: "Anime",
     blurb: "Anime discovery and interaction concept built as a sleek, stylized web experience.",
     tech: ["React", "Netlify", "Design"],
-    heroImage: "https://josienatal.com/images/aniengine.gif",
+    heroImage: "https://josienatal.com/images/animengine.gif",
     links: [{ label: "Live", href: "https://animengine.netlify.app/" }],
   },
   {
@@ -266,7 +266,7 @@ const ALL_PROJECTS: Project[] = [
   tag: "Functional Tool",
   blurb: "Guided quiz that recommends IT career paths based on interests, strengths, and technical preferences.",
   tech: ["Quiz", "Career Tool", "UX"],
-  heroImage: "https://josienatal.com/images/itquiz.gif",
+  heroImage: "https://josienatal.com/images/itquiz-nl.gif",
   links: [{ label: "Live", href: "https://josienatal.com/itquiz-nl.html" }],
 },
 ];

@@ -46,18 +46,18 @@ const ALL_PROJECTS: Project[] = [
     heroImage: "/projects/prompt-splitter.gif",
     links: [{ label: "Live", href: "https://josienatal.com/prompt-splitter.html" }],
   },
-    {
+  {
     id: "cosmic-guides",
     title: "Cosmic Guides Chatbot(s)",
     tag: "Utility",
     blurb: "Voice-enabled AI companions powered by OpenAI + Amazon Polly. Each guide embodies a distinct personality, tone, and purpose — from mystic to mentor.",
-    tech: ["OpenAI", "Amazon Polly", "React","Netlify"],
+    tech: ["OpenAI", "Amazon Polly", "React", "Netlify"],
     heroImage: "/projects/cosmic-guides.gif",
     links: [{ label: "Live Demo", href: "https://tranquil-brigadeiros-bd384d.netlify.app/" }],
   },
   {
     id: "seacoast-calculators",
-    title: "Seacoast Bank – Calculator Suite",
+    title: "Calculator Suite",
     tag: "Enterprise",
     blurb:
       "Compound Interest, Budget, Savings Goal, Debt Payoff, Mortgage Selector, Account Selector.",
@@ -73,10 +73,57 @@ const ALL_PROJECTS: Project[] = [
     ],
   },
 
+  // ANIME
+  {
+    id: "anivibes",
+    title: "AniVibes",
+    tag: "Anime",
+    blurb: "Anime-inspired music and atmosphere experience with a cozy, immersive visual style.",
+    tech: ["React", "Netlify", "UI"],
+    heroImage: "/projects/anivibes.gif",
+    links: [{ label: "Live", href: "https://cozy-druid-4ba617.netlify.app/" }],
+  },
+  {
+    id: "aniengine",
+    title: "AniEngine",
+    tag: "Anime",
+    blurb: "Anime discovery and interaction concept built as a sleek, stylized web experience.",
+    tech: ["React", "Netlify", "Design"],
+    heroImage: "/projects/aniengine.gif",
+    links: [{ label: "Live", href: "https://animengine.netlify.app/" }],
+  },
+  {
+    id: "anisage",
+    title: "AniSage",
+    tag: "Anime",
+    blurb: "Anime-themed AI-inspired interface designed for recommendations, exploration, and mood-based discovery.",
+    tech: ["React", "AI UX", "Netlify"],
+    heroImage: "/projects/anisage.gif",
+    links: [{ label: "Live", href: "https://animesage.netlify.app/" }],
+  },
+  {
+    id: "anioracle",
+    title: "AniOracle",
+    tag: "Anime",
+    blurb: "Mystical anime-inspired experience blending character energy, aesthetic design, and interactive exploration.",
+    tech: ["React", "Netlify", "Creative UI"],
+    heroImage: "/projects/anioracle.gif",
+    links: [{ label: "Live", href: "https://anioracle.netlify.app/" }],
+  },
+  {
+    id: "isekai-iq",
+    title: "Isekai IQ",
+    tag: "Anime",
+    blurb: "Anime quiz-style experience with a playful isekai concept and strong visual identity.",
+    tech: ["React", "Netlify", "Interactive"],
+    heroImage: "/projects/isekaiq.gif",
+    links: [{ label: "Live", href: "https://isekaiiq.netlify.app/" }],
+  },
+
   // WEBSITES / BRANDS
   {
     id: "medium-colin",
-    title: "Medium Colin Bates",
+    title: "MediumColinBates.com",
     tag: "Portfolio",
     blurb: "Minimal writer’s site with long-form readability and dark mode.",
     tech: ["SEO", "Design", "CMS"],
@@ -86,7 +133,7 @@ const ALL_PROJECTS: Project[] = [
   {
     id: "kelly-jo",
     title: "Kelly Jo Designs by Wine",
-    tag: "E-commerce", // note: en-dash
+    tag: "E-commerce",
     blurb: "Event-driven storefront with booking flows and custom styling.",
     tech: ["WordPress", "HubSpot", "Events"],
     heroImage: "/projects/kjdbw.png",
@@ -94,7 +141,7 @@ const ALL_PROJECTS: Project[] = [
   },
   {
     id: "kari-denton",
-    title: "Kari Denton",
+    title: "KariDenton.com",
     tag: "Portfolio",
     blurb: "Artist/creative portfolio with crisp imagery and simple hierarchy.",
     tech: ["WordPress", "UX", "Performance"],
@@ -128,6 +175,15 @@ const ALL_PROJECTS: Project[] = [
     heroImage: "/projects/larosa.png",
     links: [{ label: "Live", href: "https://larosaspastryshop.com/" }],
   },
+  {
+    id: "world-beats-radio",
+    title: "World Beats Radio",
+    tag: "Brand Site",
+    blurb: "Streaming-focused music brand experience built around global rhythms and immersive listening.",
+    tech: ["Branding", "Music", "Web"],
+    heroImage: "/projects/worldbeats.gif",
+    links: [{ label: "Live", href: "https://worldbeats.live/" }],
+  },
 
   // TOOLS / APPS
   {
@@ -155,9 +211,7 @@ const ALL_PROJECTS: Project[] = [
     blurb: "Interactive 3D astrology dice experience that blends divination and design.",
     tech: ["Netlify", "React", "Astrology"],
     heroImage: "/projects/astro-deck.gif",
-    links: [
-      { label: "Live", href: "https://astrodeck.netlify.app/app.html" },
-    ],
+    links: [{ label: "Live", href: "https://astrodeck.netlify.app/app.html" }],
   },
   {
     id: "twilight-portal",
@@ -176,6 +230,26 @@ const ALL_PROJECTS: Project[] = [
       { label: "Horoscope", href: "https://tarotandtwilight.com/portal/horoscope.html" },
       { label: "Love Compatibility", href: "https://tarotandtwilight.com/portal/love-compatibility.html" },
     ],
+  },
+
+  // FUNCTIONAL TOOLS
+  {
+    id: "wcag-ada-checklist",
+    title: "WCAG / ADA Checklist",
+    tag: "Functional Tool",
+    blurb: "Practical accessibility checklist for reviewing ADA and WCAG compliance across websites.",
+    tech: ["Accessibility", "HTML", "Audit"],
+    heroImage: "/projects/wcag-ada.gif",
+    links: [{ label: "Live", href: "https://josienatal.com/wcag-ada-checklist.html" }],
+  },
+  {
+    id: "website-audit-tracker",
+    title: "Website Audit Tracker",
+    tag: "Functional Tool",
+    blurb: "Structured audit tracker for organizing website issues, fixes, priorities, and review workflows.",
+    tech: ["Audit", "UX", "Workflow"],
+    heroImage: "/projects/audit-tracker.gif",
+    links: [{ label: "Live", href: "https://josienatal.com/website-audit-tracker.html" }],
   },
 ];
 
@@ -196,6 +270,22 @@ const HUBS: Hub[] = [
     filter: (p: Project) => ["Utility", "Enterprise"].includes(p.tag),
   },
   {
+    id: "anime",
+    title: "Anime Projects",
+    subtitle: "Anime-inspired apps, experiments, and interactive worlds.",
+    tint:
+      "bg-[radial-gradient(900px_600px_at_20%_20%,rgba(244,114,182,0.18),transparent),radial-gradient(900px_600px_at_80%_80%,rgba(96,165,250,0.16),transparent)]",
+    filter: (p: Project) => p.tag === "Anime",
+  },
+  {
+    id: "functional-tools",
+    title: "Functional Tools",
+    subtitle: "Practical tools built for audits, accessibility, and workflow clarity.",
+    tint:
+      "bg-[radial-gradient(900px_600px_at_25%_30%,rgba(34,197,94,0.16),transparent),radial-gradient(900px_600px_at_75%_70%,rgba(14,165,233,0.15),transparent)]",
+    filter: (p: Project) => p.tag === "Functional Tool",
+  },
+  {
     id: "tools",
     title: "Tools & Apps",
     subtitle: "Creative utilities and experimental interfaces.",
@@ -209,8 +299,7 @@ const HUBS: Hub[] = [
     subtitle: "Clean, accessible sites with soul.",
     tint:
       "bg-[radial-gradient(900px_600px_at_15%_80%,rgba(168,85,247,0.18),transparent),radial-gradient(800px_500px_at_85%_20%,rgba(236,72,153,0.15),transparent)]",
-    // Accept both ASCII and en-dash, so nothing disappears
-    filter: (p: Project) => ["Brand Site", "Portfolio", "E-commerce", "E-commerce"].includes(p.tag),
+    filter: (p: Project) => ["Brand Site", "Portfolio", "E-commerce"].includes(p.tag),
   },
   {
     id: "about",
@@ -270,7 +359,6 @@ function Constellation() {
         ctx.fill();
       });
 
-      // subtle links (optional; comment out if you prefer dots only)
       for (let i = 0; i < stars.length; i++) {
         for (let j = i + 1; j < stars.length; j++) {
           const dx = stars[i].x - stars[j].x;
@@ -318,7 +406,9 @@ function ProjectCard({ p, onOpen }: { p: Project; onOpen: (p: Project) => void }
       <div className="relative p-2.5 sm:p-3">
         <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-1">
           <Pill>{p.tag}</Pill>
-          {p.tech?.slice(0, 2).map((t) => <Pill key={t}>{t}</Pill>)}
+          {p.tech?.slice(0, 2).map((t) => (
+            <Pill key={t}>{t}</Pill>
+          ))}
         </div>
         <h3 className="text-white text-sm sm:text-base font-semibold drop-shadow leading-tight">
           {p.title}
@@ -364,7 +454,9 @@ function ProjectModal({
         <div className="p-6">
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <Pill>{project.tag}</Pill>
-            {project.tech?.map((t) => <Pill key={t}>{t}</Pill>)}
+            {project.tech?.map((t) => (
+              <Pill key={t}>{t}</Pill>
+            ))}
           </div>
           <h3 className="text-2xl font-semibold">{project.title}</h3>
           <p className="text-white/80 mt-2 leading-relaxed">{project.blurb}</p>
@@ -406,32 +498,29 @@ function Typewriter() {
 }
 
 export default function JayPortfolioCosmic() {
-  // keep a simple fixed theme to satisfy references
   const theme: "dark" | "light" = "dark";
 
   const [modal, setModal] = useState<Project | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // Build hub data with filters
   const hubs = useMemo(() => {
     return HUBS.map((h) => {
       let tint = h.tint;
 
-      // (If you later re-introduce a light theme, adjust these)
       if (h.id === "about" || h.id === "contact") {
         tint = "bg-gradient-to-b from-[#0b132b] via-[#1c2541] to-[#0b132b]";
       }
 
-      if (h.type === "hero" || h.type === "about" || h.type === "contact")
+      if (h.type === "hero" || h.type === "about" || h.type === "contact") {
         return { ...h, tint, items: [] as Project[] };
+      }
 
       const items = ALL_PROJECTS.filter((p) => h.filter?.(p));
       return { ...h, items, tint };
     });
   }, []);
 
-  // Track active section by scrollLeft
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
@@ -444,31 +533,26 @@ export default function JayPortfolioCosmic() {
   }, [hubs.length]);
 
   const scrollToIndex = (i: number) => {
-  const el = containerRef.current;
-  if (!el) return;
+    const el = containerRef.current;
+    if (!el) return;
 
-  if (window.innerWidth < 768) {
-    // Mobile: vertical scroll
-    const sections = el.querySelectorAll("section");
-    sections[i]?.scrollIntoView({ behavior: "smooth" });
-  } else {
-    // Desktop: horizontal scroll
-    el.scrollTo({ left: i * window.innerWidth, behavior: "smooth" });
-  }
-};
-
+    if (window.innerWidth < 768) {
+      const sections = el.querySelectorAll("section");
+      sections[i]?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      el.scrollTo({ left: i * window.innerWidth, behavior: "smooth" });
+    }
+  };
 
   const next = () => scrollToIndex(Math.min(activeIndex + 1, hubs.length - 1));
   const prev = () => scrollToIndex(Math.max(activeIndex - 1, 0));
 
   return (
     <div className="bg-gradient-to-b from-[#0b132b] via-[#1c2541] to-[#0b132b] text-[#e0eaff]">
-      {/* CONSTELLATION BACKGROUND */}
       <div className="fixed inset-0 -z-10">
         <Constellation />
       </div>
 
-      {/* HEADER */}
       <header className="fixed top-0 z-50 w-full flex justify-between items-center px-6 py-4 backdrop-blur bg-black/30">
         <button
           onClick={() => scrollToIndex(0)}
@@ -479,10 +563,18 @@ export default function JayPortfolioCosmic() {
         </button>
 
         <div className="flex gap-3 items-center">
-          <button onClick={prev} className="hidden md:inline-flex p-2 rounded-full bg-white/10 hover:bg-white/20" aria-label="Prev slide">
+          <button
+            onClick={prev}
+            className="hidden md:inline-flex p-2 rounded-full bg-white/10 hover:bg-white/20"
+            aria-label="Prev slide"
+          >
             <ChevronLeft className="h-5 w-5" />
           </button>
-          <button onClick={next} className="hidden md:inline-flex p-2 rounded-full bg-white/10 hover:bg-white/20" aria-label="Next slide">
+          <button
+            onClick={next}
+            className="hidden md:inline-flex p-2 rounded-full bg-white/10 hover:bg-white/20"
+            aria-label="Next slide"
+          >
             <ChevronRight className="h-5 w-5" />
           </button>
 
@@ -499,288 +591,289 @@ export default function JayPortfolioCosmic() {
         </div>
       </header>
 
-      {/* HORIZONTAL SLIDES */}
-     <main
-  ref={containerRef}
-  className="h-screen flex flex-col md:flex-row snap-y md:snap-x md:snap-mandatory overflow-y-auto md:overflow-x-auto overflow-x-hidden scroll-smooth"
->
-
-        {hubs.map((hub, i) => (
+      <main
+        ref={containerRef}
+        className="h-screen flex flex-col md:flex-row snap-y md:snap-x md:snap-mandatory overflow-y-auto md:overflow-x-auto overflow-x-hidden scroll-smooth"
+      >
+        {hubs.map((hub) => (
           <section
             key={hub.id}
             className={`snap-center shrink-0 w-full min-h-[100dvh] relative flex flex-col items-center justify-center px-4 text-center ${hub.tint}`}
-            >
-            {/* HERO */}
-{hub.type === "hero" && (
-  <div className="max-w-4xl px-6 text-center space-y-3 sm:space-y-4">
-    <motion.h1
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      className="text-5xl sm:text-6xl font-bold tracking-tight"
-    >
-      Where{" "}
-      <motion.span
-        className="inline-block font-mono text-sky-300"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.4 }}
-      >
-        <Typewriter />
-      </motion.span>{" "}
-      Meets{" "}
-      <motion.span
-        initial={{ backgroundPosition: "100% 50%" }}
-        animate={{ backgroundPosition: "0% 50%" }}
-        transition={{ duration: 6, repeat: Infinity, repeatType: "mirror" }}
-        className="bg-gradient-to-r from-fuchsia-400 via-pink-300 to-fuchsia-400 bg-clip-text text-transparent"
-      >
-        Magic
-      </motion.span>
-    </motion.h1>
+          >
+            {hub.type === "hero" && (
+              <div className="max-w-4xl px-6 text-center space-y-3 sm:space-y-4">
+                <motion.h1
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                  className="text-5xl sm:text-6xl font-bold tracking-tight"
+                >
+                  Where{" "}
+                  <motion.span
+                    className="inline-block font-mono text-sky-300"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.4 }}
+                  >
+                    <Typewriter />
+                  </motion.span>{" "}
+                  Meets{" "}
+                  <motion.span
+                    initial={{ backgroundPosition: "100% 50%" }}
+                    animate={{ backgroundPosition: "0% 50%" }}
+                    transition={{ duration: 6, repeat: Infinity, repeatType: "mirror" }}
+                    className="bg-gradient-to-r from-fuchsia-400 via-pink-300 to-fuchsia-400 bg-clip-text text-transparent"
+                  >
+                    Magic
+                  </motion.span>
+                </motion.h1>
 
-    <motion.p
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.8 }}
-      className="text-white/90 text-lg sm:text-xl"
-    >
-      Hi, I’m <span className="text-sky-300 font-medium">Jay</span>
-    </motion.p>
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8 }}
+                  className="text-white/90 text-lg sm:text-xl"
+                >
+                  Hi, I’m <span className="text-sky-300 font-medium">Jay</span>
+                </motion.p>
 
-    <motion.p
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 1 }}
-      className="text-white/80 text-base sm:text-lg"
-    >
-      Developer • Designer • Dreamer
-    </motion.p>
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1 }}
+                  className="text-white/80 text-base sm:text-lg"
+                >
+                  Developer • Designer • Dreamer
+                </motion.p>
 
-    <motion.p
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 1.2 }}
-      className="max-w-2xl mx-auto text-white/85 text-[15px] sm:text-base leading-relaxed"
-    >
-      I craft intuitive, aesthetic, and intelligent experiences — <br></br>blending
-      fintech precision with creative and mystical design.
-    </motion.p>
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.2 }}
+                  className="max-w-2xl mx-auto text-white/85 text-[15px] sm:text-base leading-relaxed"
+                >
+                  I craft intuitive, aesthetic, and intelligent experiences — <br />
+                  blending fintech precision with creative and mystical design.
+                </motion.p>
 
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 1.5 }}
-      className="flex justify-center pt-2"
-    >
-      <button
-  onClick={() => {
-    const idx = hubs.findIndex((h) => h.id === "utilities");
-    if (window.innerWidth < 768) {
-      document.querySelectorAll("section")[idx]?.scrollIntoView({
-        behavior: "smooth",
-      });
-    } else {
-      scrollToIndex(idx);
-    }
-  }}
-  className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium transition"
->
-  Explore Work
-</button>
-</motion.div>
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 1.5 }}
+                  className="flex justify-center pt-2"
+                >
+                  <button
+                    onClick={() => {
+                      const idx = hubs.findIndex((h) => h.id === "utilities");
+                      if (window.innerWidth < 768) {
+                        document.querySelectorAll("section")[idx]?.scrollIntoView({
+                          behavior: "smooth",
+                        });
+                      } else {
+                        scrollToIndex(idx);
+                      }
+                    }}
+                    className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium transition"
+                  >
+                    Explore Work
+                  </button>
+                </motion.div>
 
-{/* 👆 Swipe Hint for Mobile */}
-<motion.div
-  initial={{ opacity: 0, y: 10 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 2 }}
-  className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center md:hidden"
->
-  <ChevronRight className="h-6 w-6 text-white/70 animate-bounce-x" />
-  <span className="text-xs text-white/70 mt-1">Swipe</span>
-</motion.div>
-</div>
-)}
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 2 }}
+                  className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center md:hidden"
+                >
+                  <ChevronRight className="h-6 w-6 text-white/70 animate-bounce-x" />
+                  <span className="text-xs text-white/70 mt-1">Swipe</span>
+                </motion.div>
+              </div>
+            )}
 
+            {hub.type === "about" && (
+              <div className="max-w-5xl px-6 text-center space-y-6">
+                <motion.h2
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  className="text-4xl sm:text-5xl font-bold mb-2 bg-gradient-to-r from-sky-300 via-fuchsia-300 to-pink-400 bg-clip-text text-transparent"
+                >
+                  About
+                </motion.h2>
 
+                <motion.p
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 }}
+                  className="text-white/85 leading-relaxed text-lg max-w-3xl mx-auto"
+                >
+                  I merge <span className="text-sky-300">function</span> and{" "}
+                  <span className="text-fuchsia-300">feeling</span> — developing accessible,
+                  elegant tools that make technology more human. My work spans fintech,
+                  creative commerce, and mystical design — blending precision, emotion, and
+                  AI innovation into every project.
+                </motion.p>
 
-           {/* ABOUT */}
-{hub.type === "about" && (
-  <div className="max-w-5xl px-6 text-center space-y-6">
-    <motion.h2
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      className="text-4xl sm:text-5xl font-bold mb-2 bg-gradient-to-r from-sky-300 via-fuchsia-300 to-pink-400 bg-clip-text text-transparent"
-    >
-      About
-    </motion.h2>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.6 }}
+                  className="grid md:grid-cols-2 gap-8 mt-10 text-left text-white/90"
+                >
+                  <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_rgba(147,197,253,0.2)] transition">
+                    <h3 className="text-xl font-semibold text-sky-300 mb-3">
+                      Core Development ✦ AI
+                    </h3>
+                    <ul className="space-y-1.5 text-sm leading-relaxed">
+                      <li>
+                        <strong className="text-white/95">Languages & Frameworks:</strong>{" "}
+                        HTML5, CSS3, JavaScript, PHP, React, Next.js, Python, Flask
+                      </li>
+                      <li>
+                        <strong className="text-white/95">Web & CMS Tools:</strong>{" "}
+                        WordPress, Elementor, HubSpot CMS, WooCommerce
+                      </li>
+                      <li>
+                        <strong className="text-white/95">AI Tools & Engineering:</strong>{" "}
+                        OpenAI, Gemini, Leonardo.ai, AWS Polly, Fal.ai, Prompt Design,
+                        LangChain, LLM API Integration
+                      </li>
+                      <li>
+                        <strong className="text-white/95">APIs & Automation:</strong>{" "}
+                        REST, Webhooks, JSON, Zapier, FastAPI, Flask, Cloudflare Workers
+                      </li>
+                    </ul>
+                  </div>
 
-    <motion.p
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.3 }}
-      className="text-white/85 leading-relaxed text-lg max-w-3xl mx-auto"
-    >
-      I merge <span className="text-sky-300">function</span> and{" "}
-      <span className="text-fuchsia-300">feeling</span> — developing accessible,
-      elegant tools that make technology more human. My work spans fintech,
-      creative commerce, and mystical design — blending precision, emotion, and
-      AI innovation into every project.
-    </motion.p>
+                  <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_rgba(249,168,212,0.2)] transition">
+                    <h3 className="text-xl font-semibold text-fuchsia-300 mb-3">
+                      Design ✦ Deployment
+                    </h3>
+                    <ul className="space-y-1.5 text-sm leading-relaxed">
+                      <li>
+                        <strong className="text-white/95">Design & Branding:</strong> Adobe
+                        Creative Suite (Photoshop, Illustrator, InDesign), Canva
+                      </li>
+                      <li>
+                        <strong className="text-white/95">Accessibility:</strong> ADA
+                        Compliance, WCAG 2.1, UserWay Remediation, ARIA Labels, Site Audits
+                      </li>
+                      <li>
+                        <strong className="text-white/95">Deployment & Infra:</strong>{" "}
+                        Netlify, Render, Vercel, GitHub, Cloudflare R2
+                      </li>
+                      <li>
+                        <strong className="text-white/95">Optimization:</strong> QA Testing,
+                        Debugging, Core Web Vitals, SEO (Google Console, SEMrush)
+                      </li>
+                    </ul>
+                  </div>
+                </motion.div>
 
-    {/* Dual Skill Cards */}
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.6 }}
-      className="grid md:grid-cols-2 gap-8 mt-10 text-left text-white/90"
-    >
-      {/* LEFT: Core Development & AI */}
-      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_rgba(147,197,253,0.2)] transition">
-        <h3 className="text-xl font-semibold text-sky-300 mb-3">
-          Core Development ✦ AI
-        </h3>
-        <ul className="space-y-1.5 text-sm leading-relaxed">
-          <li>
-            <strong className="text-white/95">Languages & Frameworks:</strong>{" "}
-            HTML5, CSS3, JavaScript, PHP, React, Next.js, Python, Flask
-          </li>
-          <li>
-            <strong className="text-white/95">Web & CMS Tools:</strong>{" "}
-            WordPress, Elementor, HubSpot CMS, WooCommerce
-          </li>
-          <li>
-            <strong className="text-white/95">AI Tools & Engineering:</strong>{" "}
-            OpenAI, Gemini, Leonardo.ai, AWS Polly, Fal.ai, Prompt Design, LangChain, LLM API Integration
-          </li>
-          <li>
-            <strong className="text-white/95">APIs & Automation:</strong>{" "}
-            REST, Webhooks, JSON, Zapier, FastAPI, Flask, Cloudflare Workers
-          </li>
-        </ul>
-      </div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1 }}
+                  className="flex flex-wrap justify-center gap-2 pt-8"
+                >
+                  {[
+                    "React",
+                    "Next.js",
+                    "Tailwind",
+                    "Framer Motion",
+                    "Python",
+                    "Flask",
+                    "FastAPI",
+                    "OpenAI API",
+                    "HubSpot",
+                    "WordPress",
+                    "Render",
+                    "Vercel",
+                    "Cloudflare",
+                  ].map((s) => (
+                    <span
+                      key={s}
+                      className="px-3 py-1 rounded-full text-sm bg-white/10 hover:bg-white/20 text-white/90 transition"
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </motion.div>
+              </div>
+            )}
 
-      {/* RIGHT: Design, Deployment & Optimization */}
-      <div className="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm shadow-[0_0_20px_rgba(255,255,255,0.05)] hover:shadow-[0_0_30px_rgba(249,168,212,0.2)] transition">
-        <h3 className="text-xl font-semibold text-fuchsia-300 mb-3">
-          Design ✦ Deployment
-        </h3>
-        <ul className="space-y-1.5 text-sm leading-relaxed">
-          <li>
-            <strong className="text-white/95">Design & Branding:</strong> Adobe
-            Creative Suite (Photoshop, Illustrator, InDesign), Canva
-          </li>
-          <li>
-            <strong className="text-white/95">Accessibility:</strong> ADA
-            Compliance, WCAG 2.1, UserWay Remediation, ARIA Labels, Site Audits
-          </li>
-          <li>
-            <strong className="text-white/95">Deployment & Infra:</strong>{" "}
-            Netlify, Render, Vercel, GitHub, Cloudflare R2
-          </li>
-          <li>
-            <strong className="text-white/95">Optimization:</strong> QA Testing,
-            Debugging, Core Web Vitals, SEO (Google Console, SEMrush)
-          </li>
-        </ul>
-      </div>
-    </motion.div>
-
-    {/* Tech Stack Chips */}
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 1 }}
-      className="flex flex-wrap justify-center gap-2 pt-8"
-    >
-      {[
-        "React",
-        "Next.js",
-        "Tailwind",
-        "Framer Motion",
-        "Python",
-        "Flask",
-        "FastAPI",
-        "OpenAI API",
-        "HubSpot",
-        "WordPress",
-        "Render",
-        "Vercel",
-        "Cloudflare",
-      ].map((s) => (
-        <span
-          key={s}
-          className="px-3 py-1 rounded-full text-sm bg-white/10 hover:bg-white/20 text-white/90 transition"
-        >
-          {s}
-        </span>
-      ))}
-    </motion.div>
-  </div>
-)}
-
-
-            {/* CONTACT */}
             {hub.type === "contact" && (
               <div className="max-w-xl w-full px-6 text-center">
                 <h2 className="text-3xl font-semibold mb-4">Let’s build something beautiful.</h2>
                 <form
-  action="https://formspree.io/f/mblpddqd"
-  method="POST"
-  className="w-full flex flex-col gap-3"
->
-  <input
-    type="text"
-    name="name"
-    placeholder="Your Name"
-    required
-    className="p-3 rounded bg-white/10 text-white placeholder-white/70 focus:bg-white/20 outline-none"
-  />
-  <input
-    type="email"
-    name="email"
-    placeholder="Your Email"
-    required
-    className="p-3 rounded bg-white/10 text-white placeholder-white/70 focus:bg-white/20 outline-none"
-  />
-  <textarea
-    name="message"
-    placeholder="Your Message"
-    rows={4}
-    required
-    className="p-3 rounded bg-white/10 text-white placeholder-white/70 focus:bg-white/20 outline-none"
-  />
-  <input type="hidden" name="_redirect" value="https://jn-portfolio.vercel.app/#contact" />
-  <input type="text" name="_gotcha" style={{ display: "none" }} />
-  <button
-    type="submit"
-    className="mt-2 py-2 rounded-xl font-medium bg-sky-500/90 hover:bg-sky-400 text-white"
-  >
-    Send
-  </button>
-</form>
-
+                  action="https://formspree.io/f/mzzzkayp"
+                  method="POST"
+                  className="w-full flex flex-col gap-3"
+                >
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    className="p-3 rounded bg-white/10 text-white placeholder-white/70 focus:bg-white/20 outline-none"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                    className="p-3 rounded bg-white/10 text-white placeholder-white/70 focus:bg-white/20 outline-none"
+                  />
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    rows={4}
+                    required
+                    className="p-3 rounded bg-white/10 text-white placeholder-white/70 focus:bg-white/20 outline-none"
+                  />
+                  <input
+                    type="hidden"
+                    name="_redirect"
+                    value="https://jn-portfolio.vercel.app/#contact"
+                  />
+                  <input type="text" name="_gotcha" style={{ display: "none" }} />
+                  <button
+                    type="submit"
+                    className="mt-2 py-2 rounded-xl font-medium bg-sky-500/90 hover:bg-sky-400 text-white"
+                  >
+                    Send
+                  </button>
+                </form>
 
                 <div className="mt-6 flex gap-4 justify-center">
                   <a href="mailto:josie@duck.com" className="hover:text-sky-300">
                     <Mail className="h-5 w-5" />
                   </a>
-                  <a href="https://github.com/josienatal" target="_blank" rel="noreferrer" className="hover:text-sky-300">
+                  <a
+                    href="https://github.com/josienatal"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-sky-300"
+                  >
                     <Github className="h-5 w-5" />
                   </a>
-                  <a href="https://linkedin.com/in/josienatal" target="_blank" rel="noreferrer" className="hover:text-sky-300">
+                  <a
+                    href="https://linkedin.com/in/josienatal"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-sky-300"
+                  >
                     <Linkedin className="h-5 w-5" />
                   </a>
                 </div>
                 <p className="mt-6 text-sm text-white/70">
-                  © {new Date().getFullYear()} Made with <span className="text-rose-300">♥</span> by Jay Natal
+                  © {new Date().getFullYear()} Made with <span className="text-rose-300">♥</span> by
+                  Jay Natal
                 </p>
               </div>
             )}
 
-            {/* HUB (cards) */}
             {!hub.type && (
               <div className="w-full max-w-6xl px-4 sm:px-6">
                 <div className="text-center mb-6">
@@ -799,7 +892,6 @@ export default function JayPortfolioCosmic() {
         ))}
       </main>
 
-      {/* GLOWING NAV ORBS */}
       <div className="nav-orbs fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex gap-4">
         {hubs.map((h, i) => (
           <div key={h.id} className="relative group">
@@ -817,62 +909,58 @@ export default function JayPortfolioCosmic() {
         ))}
       </div>
 
-      {/* MODAL */}
       <ProjectModal open={!!modal} onClose={() => setModal(null)} project={modal} theme={theme} />
 
-      {/* STYLES */}
       <style>{`
-      main {
-  scroll-padding-top: 6rem;
-}
-section {
-  padding-top: 6rem;
-}
-html {
-  scroll-behavior: smooth;
-}
-.snap-x {
-  scroll-snap-type: x mandatory;
-}
-section {
-  scroll-snap-align: center;
-}
-main::-webkit-scrollbar {
-  display: none;
-}
-main {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+        main {
+          scroll-padding-top: 6rem;
+        }
+        section {
+          padding-top: 6rem;
+        }
+        html {
+          scroll-behavior: smooth;
+        }
+        .snap-x {
+          scroll-snap-type: x mandatory;
+        }
+        section {
+          scroll-snap-align: center;
+        }
+        main::-webkit-scrollbar {
+          display: none;
+        }
+        main {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
 
-/* ✅ Mobile: vertical layout instead of horizontal lock */
-@media (max-width: 768px) {
-  .nav-orbs {
-    display: none;
-  }
-  main {
-    flex-direction: column !important;
-    overflow-x: hidden !important;
-    overflow-y: auto !important;
-    scroll-snap-type: y mandatory !important;
-    height: auto;
-    min-height: 100vh;
-  }
-  section {
-    width: 100% !important;
-    min-height: 100vh;
-    scroll-snap-align: start;
-  }
-}
+        @media (max-width: 768px) {
+          .nav-orbs {
+            display: none;
+          }
+          main {
+            flex-direction: column !important;
+            overflow-x: hidden !important;
+            overflow-y: auto !important;
+            scroll-snap-type: y mandatory !important;
+            height: auto;
+            min-height: 100vh;
+          }
+          section {
+            width: 100% !important;
+            min-height: 100vh;
+            scroll-snap-align: start;
+          }
+        }
 
-@keyframes bounce-x {
-  0%, 100% { transform: translateX(0); opacity: 0.8; }
-  50% { transform: translateX(6px); opacity: 1; }
-}
-.animate-bounce-x {
-  animation: bounce-x 1.5s infinite;
-}
-
+        @keyframes bounce-x {
+          0%, 100% { transform: translateX(0); opacity: 0.8; }
+          50% { transform: translateX(6px); opacity: 1; }
+        }
+        .animate-bounce-x {
+          animation: bounce-x 1.5s infinite;
+        }
       `}</style>
     </div>
   );
